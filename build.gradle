@@ -1,0 +1,17 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+    sourceCompatibility = JavaVersion.VERSION_1_8
+}
+allprojects {
+    group 'com.xdq'
+    version '1.0-SNAPSHOT'
+}
